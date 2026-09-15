@@ -1,0 +1,190 @@
+/*Pet Shop Latidos e Miados - Fase 2 (CSS)
+
+/* Cores do projeto */
+:root {
+    --cor-principal: #5f4b8b;
+    --cor-secundaria: #f3e9ff;
+    --cor-destaque: #ffb86b;
+    --cor-texto: #2f2f2f;
+    --cor-clara: #ffffff;
+    --cor-fundo: #fafafa;
+}
+
+
+body {
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.skip-link {
+    position: absolute;
+    left: -9999px;
+    top: 0;
+}
+
+.skip-link:focus {
+    left: 10px;
+    top: 10px;
+    background-color: #ffffff;
+    color: #000000;
+    padding: 10px;
+    z-index: 9999;
+}
+
+/* Menu */
+.navbar-custom {
+    background-color: var(--cor-principal);
+}
+
+.navbar-custom .navbar-brand,
+.navbar-custom .nav-link {
+    color: var(--cor-clara);
+}
+
+.navbar-custom .navbar-brand {
+    font-weight: bold;
+}
+
+.navbar-custom .nav-link:hover {
+    color: var(--cor-destaque);
+}
+
+/* Títulos */
+h1,
+h2,
+h3 {
+    color: var(--cor-principal);
+}
+
+.titulo-secao {
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+/* Apresentação */
+.apresentacao {
+    background-color: var(--cor-secundaria);
+    padding: 45px 20px;
+    text-align: center;
+}
+
+/* Carrossel */
+.carousel-item img {
+    width: 100%;
+    height: 420px;
+    object-fit: contain;
+    background-color: #ffffff;
+}
+
+/* Cards dos produtos e serviços */
+.card {
+    border: none;
+    border-radius: 14px;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+    transition: 0.3s;
+    height: 100%;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+}
+
+.card-img-top {
+    height: 230px;
+    object-fit: contain;
+    padding: 15px;
+    background-color: #ffffff;
+}
+
+.preco {
+    color: var(--cor-principal);
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+/* Botões */
+.btn-pet {
+    background-color: var(--cor-principal);
+    color: #ffffff;
+    border: none;
+}
+
+.btn-pet:hover {
+    background-color: #49396d;
+    color: #ffffff;
+}
+
+
+.formulario-box {
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 14px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+}
+
+fieldset {
+    margin-bottom: 25px;
+    padding: 20px;
+    border: 1px solid #dddddd;
+    border-radius: 10px;
+}
+
+legend {
+    color: var(--cor-principal);
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+/* Melhor visualização do foco para acessibilidade */
+.form-control:focus,
+.form-select:focus,
+.form-check-input:focus,
+.btn:focus,
+a:focus {
+    outline: 3px solid rgba(255, 184, 107, 0.7);
+    outline-offset: 2px;
+}
+
+/* Relógio criado com JavaScript */
+#relogio {
+    font-weight: bold;
+    color: var(--cor-principal);
+}
+
+
+#mensagemCadastro,
+#mensagemContato {
+    display: none;
+    margin-top: 20px;
+}
+
+/* Rodapé */
+footer {
+    background-color: #292336;
+    color: #ffffff;
+    padding: 30px 15px;
+    margin-top: 50px;
+}
+
+footer a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: var(--cor-destaque);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .carousel-item img {
+        height: 260px;
+    }
+
+    .apresentacao {
+        padding: 30px 15px;
+    }
+}

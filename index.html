@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>Pet Shop Latidos e Miados</title>
+
+    
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+        rel="stylesheet">
+
+    
+    <link
+        rel="stylesheet"
+        href="css/style.css">
+
+</head>
+
+<body>
+
+    
+    <a
+        href="#conteudo"
+        class="skip-link">
+        Ir diretamente para o conteúdo
+    </a>
+
+
+    
+    <header>
+
+        <nav
+            class="navbar navbar-expand-lg navbar-dark navbar-custom">
+
+            <div class="container">
+
+                <a
+                    class="navbar-brand"
+                    href="index.html">
+                    🐾 Latidos e Miados
+                </a>
+
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#menuPrincipal"
+                    aria-controls="menuPrincipal"
+                    aria-expanded="false"
+                    aria-label="Abrir menu de navegação">
+
+                    <span class="navbar-toggler-icon"></span>
+
+                </button>
+
+                <div
+                    class="collapse navbar-collapse"
+                    id="menuPrincipal">
+
+                    <ul class="navbar-nav ms-auto">
+
+                        <li class="nav-item">
+                            <a
+                                class="nav-link active"
+                                href="index.html">
+                                Início
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a
+                                class="nav-link"
+                                href="produtos.html">
+                                Produtos
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a
+                                class="nav-link"
+                                href="servicos.html">
+                                Serviços
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a
+                                class="nav-link"
+                                href="cadastro.html">
+                                Cadastro e Agendamento
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a
+                                class="nav-link"
+                                href="contato.html">
+                                Contato
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+
+    <main id="conteudo">
+
+        
+        <section class="apresentacao">
+
+            <div class="container">
+
+                <h1>
+                    Pet Shop Latidos e Miados
+                </h1>
+
+                <p class="lead">
+                    Produtos, carinho e cuidados especiais
+                    para o seu pet.
+                </p>
+
+                <p id="relogio"></p>
+
+            </div>
+
+        </section>
+
+
+        
+        <section class="container my-5">
+
+            <h2 class="titulo-secao">
+                Destaques
+            </h2>
+
+            <div
+                id="carouselPetShop"
+                class="carousel carousel-dark slide"
+                data-bs-ride="carousel">
+
+                <div class="carousel-indicators">
+
+                    <button
+                        type="button"
+                        data-bs-target="#carouselPetShop"
+                        data-bs-slide-to="0"
+                        class="active"
+                        aria-current="true"
+                        aria-label="Primeira imagem">
+                    </button>
+
+                    <button
+                        type="button"
+                        data-bs-target="#carouselPetShop"
+                        data-bs-slide-to="1"
+                        aria-label="Segunda imagem">
+                    </button>
+
+                    <button
+                        type="button"
+                        data-bs-target="#carouselPetShop"
+                        data-bs-slide-to="2"
+                        aria-label="Terceira imagem">
+                    </button>
+
+                </div>
+
+
+                <div class="carousel-inner">
+
+                    <div class="carousel-item active">
+
+                        <img
+                            src="imagens/cama-pet.jpg"
+                            class="d-block w-100"
+                            alt="Cama confortável para cães e gatos">
+
+                    </div>
+
+
+                    <div class="carousel-item">
+
+                        <img
+                            src="imagens/brinquedo.jpg"
+                            class="d-block w-100"
+                            alt="Brinquedo mordedor para cães">
+
+                    </div>
+
+
+                    <div class="carousel-item">
+
+                        <img
+                            src="imagens/racao-caes.jpg"
+                            class="d-block w-100"
+                            alt="Pacote de ração para cães">
+
+                    </div>
+
+                </div>
+
+
+                <button
+                    class="carousel-control-prev"
+                    type="button"
+                    data-bs-target="#carouselPetShop"
+                    data-bs-slide="prev">
+
+                    <span
+                        class="carousel-control-prev-icon"
+                        aria-hidden="true">
+                    </span>
+
+                    <span class="visually-hidden">
+                        Anterior
+                    </span>
+
+                </button>
+
+
+                <button
+                    class="carousel-control-next"
+                    type="button"
+                    data-bs-target="#carouselPetShop"
+                    data-bs-slide="next">
+
+                    <span
+                        class="carousel-control-next-icon"
+                        aria-hidden="true">
+                    </span>
+
+                    <span class="visually-hidden">
+                        Próximo
+                    </span>
+
+                </button>
+
+            </div>
+
+        </section>
+
+
+       
+        <section class="container my-5">
+
+            <h2 class="titulo-secao">
+                O que oferecemos?
+            </h2>
+
+            <div class="row g-4">
+
+                <div class="col-md-4">
+
+                    <div class="card">
+
+                        <div class="card-body text-center">
+
+                            <h3 class="card-title">
+                                🛍 Produtos
+                            </h3>
+
+                            <p class="card-text">
+                                Acessórios, rações e produtos
+                                de higiene para seu pet.
+                            </p>
+
+                            <a
+                                href="produtos.html"
+                                class="btn btn-pet">
+                                Ver produtos
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-md-4">
+
+                    <div class="card">
+
+                        <div class="card-body text-center">
+
+                            <h3 class="card-title">
+                                🛁 Serviços
+                            </h3>
+
+                            <p class="card-text">
+                                Serviços de banho e tosa
+                                com opção de tele-busca.
+                            </p>
+
+                            <a
+                                href="servicos.html"
+                                class="btn btn-pet">
+                                Ver serviços
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-md-4">
+
+                    <div class="card">
+
+                        <div class="card-body text-center">
+
+                            <h3 class="card-title">
+                                📅 Agendamento
+                            </h3>
+
+                            <p class="card-text">
+                                Cadastre seu pet e escolha
+                                uma data e horário.
+                            </p>
+
+                            <a
+                                href="cadastro.html"
+                                class="btn btn-pet">
+                                Agendar
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    
+    <footer>
+
+        <div class="container text-center">
+
+            <p>
+                <strong>
+                    Pet Shop Latidos e Miados
+                </strong>
+            </p>
+
+            <p>
+                Contato:
+                contato@latidosemiados.com
+            </p>
+
+            <p>
+                © 2026 Pet Shop Latidos e Miados.
+                Projeto acadêmico desenvolvido por Kaiane.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js">
+    </script>
+
+    <!-- Nosso JavaScript -->
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
