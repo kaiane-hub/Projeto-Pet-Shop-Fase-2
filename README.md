@@ -1,22 +1,30 @@
-# Pet Shop Latidos e Miados
+# Pet Shop Latidos e Miados 🐾
 
 Projeto desenvolvido para a disciplina de **Fundamentos de Sistemas Web**.
 
-## Sobre o projeto
+## Sobre o Projeto
 
-O sistema consiste em uma plataforma web para um pet shop, desenvolvida utilizando apenas HTML nesta primeira fase do projeto.
+O projeto consiste no desenvolvimento de uma plataforma web para o **Pet Shop Latidos e Miados**, permitindo a visualização de produtos e serviços, cadastro do cliente e do pet e realização de agendamentos.
 
-O objetivo é apresentar produtos e serviços oferecidos pelo Pet Shop Latidos e Miados de forma organizada e de fácil navegação.
+Na **Fase 2**, o sistema desenvolvido anteriormente em HTML foi aprimorado utilizando **CSS, Bootstrap e JavaScript**, tornando as páginas mais atrativas, organizadas, responsivas e interativas.
+
+---
 
 ## Funcionalidades
 
-O site possui as seguintes páginas:
-
 ### Página Inicial
-Apresenta informações gerais sobre o pet shop e links para as demais páginas do sistema.
+
+A página inicial apresenta:
+
+- Menu de navegação;
+- Apresentação do Pet Shop;
+- Carrossel de imagens utilizando Bootstrap;
+- Atalhos para produtos, serviços e agendamento;
+- Data e hora atualizadas automaticamente através de JavaScript.
 
 ### Produtos
-Apresenta os produtos disponíveis, organizados nas seguintes categorias:
+
+Os produtos estão organizados em três categorias:
 
 - Acessórios;
 - Rações não perecíveis;
@@ -29,39 +37,98 @@ Cada produto possui:
 - Descrição;
 - Valor.
 
-São apresentados pelo menos dois produtos de cada categoria.
+O sistema apresenta pelo menos dois produtos de cada categoria.
 
 ### Serviços
-Apresenta os serviços oferecidos pelo pet shop:
+
+O Pet Shop oferece os seguintes serviços:
 
 - Banho;
-- Banho com tele-busca;
-- Banho e tosa;
-- Banho e tosa com tele-busca.
+- Tosa.
 
-Cada serviço possui descrição, valor e informação sobre a disponibilidade de tele-busca.
+O cliente pode escolher entre:
 
-### Contato
-Apresenta as informações de contato do pet shop e um formulário para preenchimento de:
+- Tele-busca;
+- Entrega do pet diretamente no estabelecimento.
+
+Os serviços podem ser agendados através da página de cadastro e agendamento.
+
+### Cadastro do Cliente e do Pet
+
+O sistema possui um formulário para cadastro do cliente contendo informações como:
 
 - Nome;
-- E-mail;
+- CPF;
+- Endereço;
 - Telefone;
-- Assunto;
-- Mensagem.
+- E-mail;
+- Sexo.
 
-O formulário é apenas demonstrativo nesta primeira fase do projeto, não realizando o envio das informações.
+Também são solicitados dados do pet, como:
 
-## Estrutura do projeto
+- Nome;
+- Raça;
+- Idade;
+- Tipo do pet;
+- Informações adicionais.
 
-O projeto está organizado da seguinte forma:
+Foram utilizados diferentes elementos e atributos HTML, incluindo:
 
-```text
-PROJETO-PETSHOP
-│
-├── imagens
-├── contato.html
-├── index.html
-├── produtos.html
-├── servicos.html
-└── README.md
+- `input`;
+- `radio`;
+- `checkbox`;
+- `number`;
+- `email`;
+- `tel`;
+- `placeholder`;
+- `required`.
+
+### Agendamento
+
+O cliente pode selecionar:
+
+- Serviço desejado;
+- Forma de atendimento;
+- Data;
+- Horário.
+
+O campo `datetime-local` é utilizado para selecionar a data e o horário do agendamento.
+
+O JavaScript também impede a seleção de horários anteriores ao momento atual.
+
+### Contato
+
+A página de contato apresenta:
+
+- Telefone;
+- E-mail;
+- Endereço;
+- Horário de atendimento;
+- Formulário para envio de mensagem.
+
+O envio é demonstrativo e utiliza JavaScript para apresentar uma confirmação ao usuário.
+
+---
+
+## Acessibilidade
+
+Foram aplicados recursos de acessibilidade, principalmente para auxiliar usuários que utilizam leitores de tela.
+
+Entre os recursos utilizados estão:
+
+- Atributo `alt` nas imagens com descrição do conteúdo;
+- Uso de `label` associado aos campos dos formulários;
+- Destaque visual ao navegar pelos elementos utilizando o teclado;
+- Link para pular diretamente para o conteúdo principal;
+- Uso de atributos de acessibilidade nos componentes de navegação.
+
+---
+
+## Tecnologias Utilizadas
+
+- HTML5;
+- CSS3;
+- Bootstrap 5.1.1;
+- JavaScript;
+- GitHub;
+- GitHub Pages.
