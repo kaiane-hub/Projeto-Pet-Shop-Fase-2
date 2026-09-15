@@ -7,7 +7,6 @@ Projeto desenvolvido para a disciplina de **Fundamentos de Sistemas Web**.
 O projeto consiste no desenvolvimento de uma plataforma web para o **Pet Shop Latidos e Miados**, permitindo a visualização de produtos e serviços, cadastro do cliente e do pet e realização de agendamentos.
 
 Na **Fase 2**, o sistema desenvolvido anteriormente em HTML foi aprimorado utilizando **CSS, Bootstrap e JavaScript**, tornando as páginas mais atrativas, organizadas, responsivas e interativas.
-
 ---
 
 ## Funcionalidades
